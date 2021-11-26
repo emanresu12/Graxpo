@@ -1,0 +1,323 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 8, 2020, 2:28:20 PM
+    Author     : frontend
+*/
+
+
+html{
+    font-size: 16px; /* 1rem*/
+}
+
+body{
+    color: #81868E;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #333B46
+}
+
+img{
+    max-width: 100%;
+}
+
+.image-placeholder{
+    position: relative;
+    overflow: hidden;
+}
+.image-placeholder:after{
+    content: '';
+    display: block;
+    padding-top: 56.62%;
+}
+.image-placeholder img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.size-1by1:after{
+    padding-top: 100%;
+}
+
+.size-4by3:after{
+    padding-top: 75%;
+}
+
+.btn-graxpo{
+    background-color: #E84C3D;
+    color:#fff;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.bg-graxpo{
+    background-color: #E84C3D;
+}
+
+.section-title{
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+
+}
+.section-title:after{
+    content: '';
+    display: block;
+    width: 46px;
+    height: 3px;
+    background-color: #898989;
+
+}
+
+.section-header p{
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center .section-title:after{
+    margin: 0 auto;
+}
+
+
+main > section{
+    margin-bottom: 100px;
+}
+
+
+header .navbar-toggler{
+    border:none;
+}
+header .navbar-toggler span{
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: #E84C3D;
+    margin-bottom: 5px;
+}
+header .navbar-toggler span:last-of-type{
+    margin-bottom: 0
+}
+
+#main-menu .navbar-nav .nav-link{
+    text-align: center;
+    font-size: 14px;
+    color:#333B46;
+    background-color: #fff;
+    text-transform: uppercase;
+    border-bottom: 1px solid #E84C3D;
+    transition: 0.3s linear;
+}
+#main-menu .navbar-nav .nav-link.active,
+#main-menu .navbar-nav .nav-link:hover{
+    background-color: #E84C3D;
+   color: #fff;
+}
+
+/*HOME*/
+.home{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.home h5{
+    color: #81868E;
+}
+
+.home .to-about{
+    bottom: 54px;
+    left:50%;
+    position: absolute;
+    text-decoration: none;
+    transform: translateX(-50%);
+}
+.home .to-about .fas{
+    font-size: 4rem;
+    color: #333B46;
+}
+.home .to-about .fas + span{
+    font-size: 12px;
+    line-height: 20px;
+    color: #E84C3D;
+    text-transform: uppercase;
+}
+
+/* SERVICES*/
+
+.services .service-item{
+      border: 3px solid #EBEBEB;
+      border-radius: 5px;
+      padding: 30px;
+      transition: 0.2s linear;
+      cursor: pointer;
+}
+
+.services .service-item:hover{
+    background-color: #E84C3D;
+    color:#fff;
+    border: 3px solid #E84C3D;
+}
+
+.services .service-item:hover .service-item-icon span{
+    background-color: #fff;
+    color: #E84C3D;
+}
+
+.services .service-item .service-item-icon span{
+    height: 108px;
+    width: 108px;
+    line-height: 108px;
+    border-radius: 50%;
+    background-color: #E84C3D;
+    color:#fff;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.services .service-item:hover .section-title{
+    color:#fff;
+}
+.services .service-item:hover .section-title:after{
+    background-color:#fff;
+}
+
+/*PORTFOLIO*/
+.portfolio{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 137px 0 115px;
+}
+
+.portfolio .section-title{
+    color:#fff;
+}
+.portfolio .section-title:after{
+    background-color:#fff;
+}
+
+.team .team-member{
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.team .team-member .team-member-image{
+    position: relative;
+}
+
+.team .team-member .team-member-image img{
+    display: block;
+    width: 100%;
+}
+
+.team .team-member .hover{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background: #E84C3D;
+    color:#fff;
+    display: none;
+    
+}
+
+.team .team-member:hover .hover{
+    display: block;
+}
+.team-member .hover p{
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 20px;
+    max-height: 60px;
+    overflow: hidden;
+}
+.team-member .hover a.fab{
+    color:#fff;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    border:1px solid #fff;
+    border-radius: 50%;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s linear;
+}
+.team-member .hover a.fab:hover{
+    color:#E84C3D;
+    background: #fff;
+}
+
+.team .team-member .team-member-title a{
+    color:#333B46;
+    text-decoration: none;
+    transition: 0.3s linear;
+}
+.team .team-member .team-member-title a:hover{
+    color:#E84C3D;
+}
+.subscribe {
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.subscribe .section-title:after{
+    background-color: #fff;
+}
+
+.subscribe .subscribe-form .form-control{
+    border-radius: 0;
+    background-color: transparent;
+    color:#fff;
+    border-color: #fff;
+}
+.subscribe .subscribe-form .form-control::placeholder{
+    color:#fff;
+    opacity: 1;
+}
+
+.subscribe .subscribe-form .btn{
+    border-radius: 0;
+}
+
+.contact-form .form-group{
+    margin-bottom: 1rem;
+}
+.contact-form .form-control{
+    border-radius: 0;
+    border: 3px solid #EBEBEB;
+    line-height: 30px;
+}
+
+.contact-form .btn{
+    border-radius: 0;
+}
+
+.contact-data p, 
+.contact-data a{
+    color:#81868E;
+    font-size: 14px;
+    line-height: 26px;
+    text-decoration: none;
+}
